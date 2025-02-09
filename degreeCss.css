@@ -1,0 +1,83 @@
+/* Degree Program Section Styling */
+#degree-program {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#degree-program h3 {
+    color: #0073e6;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#degree-program h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#degree-program h2 {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+}
+
+#degree-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.degree {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.degree:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.degree-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.degree h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.degree p {
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    #degree-program h1 {
+        font-size: 28px;
+    }
+    
+    #degree-program h2 {
+        font-size: 16px;
+    }
+    
+    .degree {
+        padding: 15px;
+    }
+}

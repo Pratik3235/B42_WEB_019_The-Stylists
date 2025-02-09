@@ -1,0 +1,78 @@
+#goles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 8%;
+    background-color: #f4f4f4;
+    gap: 30px;
+}
+
+#goles > div:first-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#goles img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#goles > div:last-child {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+}
+
+#goles h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 5px 0;
+    color: #222;
+}
+
+#goles p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.golesBtn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #0056D2, #003E99);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 86, 210, 0.3);
+}
+
+.golesBtn:hover {
+    background: linear-gradient(135deg, #003E99, #002A66);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 86, 210, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #goles {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #goles > div:last-child {
+        text-align: center;
+    }
+
+    .golesBtn {
+        padding: 16px 32px;
+        font-size: 1.2rem;
+    }
+}

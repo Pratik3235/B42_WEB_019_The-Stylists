@@ -1,0 +1,91 @@
+#degree-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.degree {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.degree:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+.degree-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Section styles */
+#degree-program {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#degree-program h1, #degree-program h2, #degree-program h3 {
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* h1 styles */
+#degree-program h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* h2 styles */
+#degree-program h2 {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* h3 styles */
+#degree-program h3 {
+    font-size: 1.1rem;
+    color: #34495e;
+    font-weight: normal;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+    .degree {
+        width: 48%;  /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .degree {
+        width: 100%;  /* Full width on small screens */
+    }
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stylist | Degrees, Certificates</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6fc;
+        }
+        #searchResults {
+    margin-top: 20px;
+}
+
+.course-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+    </style>
+    <link rel="stylesheet" href="./afterLoginNav.css">
+    <link rel="stylesheet" href="./populerCertificate.css">
+    <link rel="stylesheet" href="./newOnApp.css">
+    <link rel="stylesheet" href="./genAI.css">
+    <link rel="stylesheet" href="./degreeCss.css">
+    <link rel="stylesheet" href="./footersIndividual.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+
+    <div id="searchResults"></div>
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="logo">coursera</span>
+            <div class="search-bar">
+                <input type="text" placeholder="What do you want to learn?">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        <div class="nav-right" id="navRight">
+            <a href="./degree.html" target="_blank">Online Degrees</a>
+            <a href="https://www.coursera.org/career-academy?trk_ref=globalnav" target="_blank">Careers</a>
+            <div class="profile-dropdown">
+                <button class="profile-btn">Profile▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">My Purchases</a>
+                    <a href="#" id="logoutBtn">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <section id="popular-certificate">
+        <br>
+        <h3>Specializations and Professional Certificates</h3>
+        <br>
+        <h1>Most Popular Certificates</h1>
+        <br>
+        <p>Explore our most popular programs, get job-ready for an in-demand career.</p>
+        <br>
+        <div class="grid-container" id="certificatesGrid"></div>
+    </section>
+
+    <section id="new-on-app">
+        <br>
+        <h3>Courses and Professional Certificates</h3>
+        <br>
+        <h1>New on Coursera</h1>
+        <br>
+        <p>Explore our newest programs, focused on delivering in-demand skills.</p>
+        <div id="newContainer" class="new-container">
+            <!-- Certificates will be displayed here -->
+        </div>
+    </section>
+
+    <section id="gen-ai">
+        <div>
+            <h1>Get started</h1>
+            <h1>with GenAI</h1>
+            <p>Identify, develop, and</p>
+            <p>execute impactful GenAI</p>
+            <p>business strategies.</p>
+            <button id="genAIBtn">View all GenAI</button>
+        </div>
+        <div class="course-grid" id="course-grid"></div>
+    </section>
+
+    <section id="degree-program">
+        <h3>Degree Program</h3>
+        <h1>Get a head start on a degree today</h1>
+        <h2>With these programs, you can build valuable skills, earn career credentials, and make progress toward a degree before you even enroll.</h2>
+        <div id="degree-container">
+            
+        </div>
+    </section>
+
+    <section id="footer-section"></section>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Coursera</h3>
+            <a href="https://about.coursera.org/?_gl=1*16uaci6*_gcl_au*NTI3NDU4NDIwLjE3Mzg2ODYyMjk.">About</a>
+            <a href="https://about.coursera.org/how-coursera-works/">What We Offer</a>
+            <a href="https://about.coursera.org/leadership">Leadership</a>
+            <a href="https://careers.coursera.com/">Careers</a>
+            <a href="https://www.coursera.org/browse">Catalog</a>
+            <a href="https://www.coursera.org/courseraplus">Coursera Plus</a>
+            <a href="https://www.coursera.org/professional-certificates">Professional Certificates</a>
+            <a href="https://www.coursera.org/degrees">Degrees</a>
+        </div>
+        <div class="footer-column">
+            <h3>Community</h3>
+            <a href="https://www.coursera.support/s/community?language=en_US">Learners</a>
+            <a href="https://www.coursera.org/partners">Partners</a>
+            <a href="https://www.coursera.support/s/article/360000152926-Become-a-Coursera-beta-tester?language=en_US">Beta Testers</a>
+            <a href="https://blog.coursera.org/">Blog</a>
+            <a href="https://medium.com/coursera-engineering">Tech Blog</a>
+            <a href="https://www.coursera.org/teaching-center/?_gl=1*vj3is*_gcl_au*NTI3NDU4NDIwLjE3Mzg2ODYyMjk.">Teaching Center</a>
+        </div>
+        <div class="footer-column">
+            <h3>More</h3>
+            <a href="https://about.coursera.org/press?_gl=1*13kodiu*_gcl_au*NTI3NDU4NDIwLjE3Mzg2ODYyMjk.">Press</a>
+            <a href="https://investor.coursera.com/overview/default.aspx">Investors</a>
+            <a href="https://www.coursera.org/about/terms">Terms</a>
+            <a href="https://www.coursera.org/about/privacy">Privacy</a>
+            <a href="http://coursera.support/s/learner-help-center?language=en_US">Help</a>
+            <a href="https://www.coursera.support/s/article/360050668591-Accessibility-Statement?language=en_US">Accessibility</a>
+        </div>
+        <div class="footer-right">
+            <br>
+            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" alt="Google Play"></div>
+            <br><br>
+            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" alt="App Store"></div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+
+
+<script>
+    const firebaseURL = "https://b42group019the-stylist-default-rtdb.firebaseio.com/certificates.json";
+
+    async function fetchCertificates() {
+        try {
+            const response = await fetch(firebaseURL);
+            const certificates = await response.json();
+    
+            const gridContainer = document.getElementById("certificatesGrid");
+            gridContainer.innerHTML = ""; // Clear previous content
+    
+            if (certificates) {
+                certificates.forEach(cert => {
+                    let courseName = cert.course_name.replace("Professional Certificate", "").trim();
+
+                    let item = document.createElement("div");
+                    item.classList.add("grid-item");
+                    item.style.cursor = "pointer"; // Indicate it's clickable
+
+                    let img = document.createElement("img");
+                    img.src = cert.image_url;
+                    img.alt = courseName;
+                    img.style.width = "100px";
+                    img.style.borderRadius = "8px";
+
+                    let title = document.createElement("p");
+                    title.textContent = courseName;
+                    title.style.fontWeight = "bold";
+
+                    // Add click event listener to redirect
+                    item.addEventListener("click", () => {
+                        sessionStorage.setItem("selectedCertificate", JSON.stringify(cert));
+                        window.location.href = "./certificate-details-display.html";
+                    });
+
+                    item.appendChild(img);
+                    item.appendChild(title);
+                    gridContainer.appendChild(item);
+                });
+            }
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    }
+
+    // Fetch data when the page loads
+    window.onload = fetchCertificates;
+</script>
+
+<script>
+    const databaseUrl = "https://b42group019the-stylist-default-rtdb.firebaseio.com/certificates.json";
+
+    fetch(databaseUrl)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            if (Array.isArray(data)) {
+                const certificates = data;
+                const firstFourCertificates = certificates.slice(0, 4);
+                const container = document.getElementById("newContainer");
+
+                firstFourCertificates.forEach(cert => {
+                    const certificateElement = document.createElement("div");
+                    certificateElement.classList.add("certificate");
+                    certificateElement.innerHTML = `
+                        <img src="${cert.image_url}" alt="${cert.course_name}" class="certificate-image">
+                        <h3 class="certificate-title">${cert.course_name.replace("Professional Certificate", "").trim()}</h3>
+                        <p class="certificate-duration"><strong>Duration:</strong> ${cert.duration}</p>
+                        <p class="certificate-prepared-for"><strong>Prepared For:</strong> ${cert.prepared_for}</p>
+                    `;
+
+                    // Add click event listener to redirect
+                    certificateElement.addEventListener("click", () => {
+                        sessionStorage.setItem("selectedCertificate", JSON.stringify(cert));
+                        window.location.href = "./certificate-details.html";
+                    });
+
+                    container.appendChild(certificateElement);
+                });
+            } else {
+                console.error("Expected an array of certificates, but received:", data);
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching certificates:", error);
+        });
+</script>
+
+<script>
+    fetch('https://gen-ai-courses-default-rtdb.firebaseio.com/gen_ai_courses.json')
+      .then(response => response.json())
+      .then(data => {
+        const courses = [...data.New, ...data.Beginner, ...data.Popular]; // Merge arrays
+        const gridContainer = document.getElementById('course-grid');
+
+        // Display the first 3 courses in a grid
+        courses.slice(0, 3).forEach(course => {
+          const courseDiv = document.createElement('div');
+          courseDiv.classList.add('course');
+
+          courseDiv.innerHTML = `
+            <img src="${course.image_url}" alt="${course.course_name}">
+            <h3>${course.course_name}</h3>
+            <p>${course.company}</p>
+            <p>${course.description}</p>
+          `;
+
+          // Add click event listener to redirect
+          courseDiv.addEventListener("click", () => {
+              sessionStorage.setItem("selectedCourse", JSON.stringify(course));
+              window.location.href = "./course-details.html";
+          });
+
+          gridContainer.appendChild(courseDiv);
+        });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+</script>
+
+<script>
+    fetch('https://degree-database-default-rtdb.firebaseio.com/degrees.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // Log the raw data to check the structure
+
+        if (Array.isArray(data)) {
+            const degrees = data.slice(0, 4); // Display only first 4 elements
+            const container = document.getElementById('degree-container');
+            container.innerHTML = ""; // Clear previous content
+
+            degrees.forEach(degree => {
+                const degreeDiv = document.createElement('div');
+                degreeDiv.classList.add('degree');
+                degreeDiv.style.cursor = "pointer"; // Indicate it's clickable
+
+                degreeDiv.innerHTML = `
+                    <img src="${degree.image_url}" alt="${degree.degree}" class="degree-img">
+                    <h3>${degree.university_name}</h3>
+                    <p><strong>Estimated Fees:</strong> ${degree.estimated_fees}</p>
+                `;
+
+                // Add click event listener to redirect
+                degreeDiv.addEventListener("click", () => {
+                    sessionStorage.setItem("selectedDegree", JSON.stringify(degree));
+                    window.location.href = "./degree-details.html";
+                });
+
+                container.appendChild(degreeDiv);
+            });
+        } else {
+            console.error('Degrees data is not in the expected format or is missing.');
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+</script>
+
+<script src="../footerIndividuals.js"></script>
+
+<script>
+    document.getElementById("genAIBtn").addEventListener("click", function() {
+        window.location.href = "./genai-courses.html";
+    });
+</script>
+
+<script>
+    document.querySelector(".search-btn").addEventListener("click", async function () {
+    let searchInput = document.querySelector(".search-bar input").value.toLowerCase().trim();
+    let resultsContainer = document.getElementById("searchResults");
+
+    if (!searchInput) {
+        resultsContainer.innerHTML = "<p>Please enter a search term.</p>";
+        return;
+    }
+
+    try {
+        let response = await fetch("https://gen-ai-courses-default-rtdb.firebaseio.com/gen_ai_courses.json");
+        let data = await response.json();
+
+        let filteredCourses = Object.values(data).filter(course => 
+            course && course.name && course.name.toLowerCase().includes(searchInput)
+        );
+
+        if (filteredCourses.length > 0) {
+            resultsContainer.innerHTML = filteredCourses.map(course => 
+                `<div class="course-item">
+                    <h3>${course.name}</h3>
+                    <p>${course.description || "No description available."}</p>
+                </div>`
+            ).join("");
+        } else {
+            resultsContainer.innerHTML = "<p>No matching courses found.</p>";
+        }
+    } catch (error) {
+        console.error("Error fetching courses:", error);
+        resultsContainer.innerHTML = "<p>Failed to fetch course data.</p>";
+    }
+});
+
+</script>
+
+
+<script>
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+
+    window.location.href = "./beforeLoginHome.html";
+});
+
+</script>

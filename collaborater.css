@@ -1,0 +1,50 @@
+#collaborater {
+    background-color: #333;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Heading Link Styling */
+#collaborater a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#collaborater a h1{
+    color: white;
+}
+#collaborater a:hover {
+    text-decoration: underline;
+}
+/* University and Company Logos */
+#uni-company {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#uni-company > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#uni-company > div img {
+    max-width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+}

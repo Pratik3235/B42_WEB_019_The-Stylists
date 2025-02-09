@@ -1,0 +1,96 @@
+/* General styles for the gen-ai section */
+#gen-ai {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 20px;
+    background-color: aquamarine;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#gen-ai > div {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+}
+
+#gen-ai h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#gen-ai p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#gen-ai #genAIBtn {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#gen-ai #genAIBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Course Grid Layout */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.course {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.course:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.course p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.course a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.course a:hover {
+    background-color: #218838;
+}

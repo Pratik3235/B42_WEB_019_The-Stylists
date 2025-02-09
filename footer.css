@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 40px 20px;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    font-size: 14px;
+}
+.footer-column a:hover {
+    text-decoration: none;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-right > div img {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}

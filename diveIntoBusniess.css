@@ -1,0 +1,66 @@
+#diveIntoBusniess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+    background-color: #fff;
+    gap: 30px;
+}
+
+#diveIntoBusniess > div:first-child {
+    flex: 1;
+    max-width: 500px;
+}
+
+#diveIntoBusniess h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#diveIntoBusniess p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.discover-Busniess-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0056D2;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.discover-Busniess-btn:hover {
+    background-color: #003E99;
+}
+
+#grid-busniess {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    flex: 1;
+}
+
+#grid-busniess div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;  /* Reduced height for better spacing */
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 5px;  /* Reduced padding to remove extra space */
+}
+
+#grid-busniess div img {
+    max-height: 80px;  /* Ensure uniform logo size */
+    width: auto;
+    object-fit: contain;
+    transition: 0.3s;
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6fc;
+        }
+        #searchResults {
+    margin-top: 20px;
+}
+
+.course-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+    </style>
+    <title>The Stylist | Degrees, Certififates</title>
+    <link rel="stylesheet" href="./homeStyle.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./container.css">
+    <link rel="stylesheet" href="./collaborater.css">
+    <link rel="stylesheet" href="./genAI.css">
+    <link rel="stylesheet" href="./newOnApp.css">
+    <link rel="stylesheet" href="./populerCertificate.css">
+    <link rel="stylesheet" href="./degreeProgram.css">
+    <link rel="stylesheet" href="./lernersContainer.css">
+    <link rel="stylesheet" href="./courseraCommunity.css">
+    <link rel="stylesheet" href="./diveIntoBusniess.css">
+    <link rel="stylesheet" href="./goles.css">
+    <link rel="stylesheet" href="./footersIndividual.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+    <div id="for">
+        <h4><a href="#">For Individuals</a></h4>
+        <h4><a href="#">For Busnisses</a></h4>
+    </div>
+    <br>
+    <div id="searchResults"></div>
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="logo">coursera</span>
+            <div class="search-bar">
+                <input type="text" placeholder="What do you want to learn?">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        <div class="nav-right" id="navRight">
+            <a href="./degree.html" target="_blank">Online Degrees</a>
+            <a href="https://www.coursera.org/career-academy?trk_ref=globalnav" target="_blank">Careers</a>
+            <a href="login.html" id="loginBtn">Log In</a>
+            <button class="join-btn">Join for Free</button>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="text-section">
+            <h1>Learn without </h1>
+            <h1>limits</h1>
+            <p>Start, switch, or advance your career with more than 10,000 courses, Professional Certificates, and degrees from world-class universities and companies.</p>
+            <div class="buttons">
+                <a href="./signup.html" class="join-btn">Join For Free</a>
+                <a href="#" class="business-btn">Try Coursera for Business</a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="./images/CourseraLearners_C_Composition_Hillary_copy__3_.png" alt="Person Image">
+        </div>
+    </section>
+    <br>
+    <section id="collaborater">
+        <a href=""><h1>We collaborater With 300+ leading universities and companies</h1></a>
+        
+        <div id="uni-company">
+            <div><img src="./images/illinois-3.png" alt=""></div>
+            <div><img src="./images/duke-3.png" alt=""></div>
+            <div><img src="./images/google.png" alt=""></div>
+            <div><img src="./images/umich.png" alt=""></div>
+            <div><img src="./images/1000px-IBM_logo.svg.png" alt=""></div>
+            <div><img src="./images/imperial.png" alt=""></div>
+            <div><img src="./images/stanford.png" alt=""></div>
+            <div><img src="./images/penn.png" alt=""></div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="popular-certificate">
+        <br>
+        <h3>Specializations and Professional Certificates</h3>
+        <br>
+        <h1>Most Popular Certificates</h1>
+        <br>
+        <p>Explore our most popular programs, get job-ready for an in-demand career.</p>
+        <br>
+        <div class="grid-container" id="certificatesGrid"></div>
+    </section>
+
+    <section id="gen-ai">
+        <div>
+            <h1>Get started</h1>
+            <h1>with GenAI</h1>
+            <p>Identify, develop, and</p>
+            <p>execute impactful GenAI</p>
+            <p>business strategies.</p>
+            <button id="genAIBtn">View all GenAI</button>
+        </div>
+        <div class="course-grid" id="course-grid"></div>
+    </section>
+
+    <section id="new-on-app">
+        <br>
+        <h3>Courses and Professional Certificates</h3>
+        <br>
+        <h1>New on Coursera</h1>
+        <br>
+        <p>Explore our newest programs, focused on delivering in-demand skills.</p>
+        <div id="newContainer" class="new-container">
+            <!-- Certificates will be displayed here -->
+        </div>
+    </section>
+
+    <section id="degree-program">
+        <h3>Degree Program</h3>
+        <h1>Get a head start on a degree today</h1>
+        <h2>With these programs, you can build valuable skills, earn career credentials, and make progress toward a degree before you even enroll.</h2>
+        <div id="degree-container">
+            
+        </div>
+    </section>
+
+    <section id="learners">
+        <div class="learners-container">
+            <div class="learners-content">
+                <img src="./images/outcomes.png" alt="learners Image">
+            </div>
+            <div class="learners-text">
+                <h1> Learner outcomes on Coursera </h1>
+                <p> <span class="bold-text">77% of learners report career benefits</span>, such as new skills, increased pay, and new job opportunities. <a href="#" class="link">2023 Coursera Learner Outcomes Report</a></p>
+                <a href="#" class="btn">Join for Free</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="community">
+        <h1>From the Coursera community</h1>
+        <h1>168+ million people have already joined Coursera</h1>
+        <div id="coursera-community">
+            <div class="feedback">
+                <div><img src="./images/Circle_Kenia.png" alt=""></div>
+                <p>"Being a mother - especially a working mother means I'm constantly trying to juggle my schedule, my kids' schedules, and work. I am very grateful for the flexible and remote learning programs that Coursera has to offer."</p>
+            </div>
+            <div class="feedback">
+                <div><img src="./images/Circle_Ryan.png" alt=""></div>
+                <p>"From taking courses on Coursera, I gained a deep understanding of the UX Design process from start to finish. With the knowledge I gained, I feel prepared for entry-level jobs and internships. I've been able to apply the skills and knowledge I gained to multiple projects and work experiences."</p>
+            </div>
+            <div class="feedback">
+                <div><img src="./images/Vishal_Verma.png" alt=""></div>
+                <p>"I really enjoyed my courses.The quizzes, videos, and quick labs provided helpful hands-on experience. Learning on Coursera has given me the confidence and ability to excel in my career. I love this feeling."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="diveIntoBusniess">
+        <div>
+            <h1>Drive your business forward</h1>
+            <h1>by empowering your talent</h1>
+            <p>Train teams with industry-leading experts and universities, enhanced by AI</p>
+            <p>tools and recognized credentials.</p>
+            <a href="#" class="discover-Busniess-btn">Discover Coursera For Business</a>
+        </div>
+        <div id="grid-busniess">
+            <div><img src="./images/loreal.png" alt="company-logo"></div>
+            <div><img src="./images/pandg.png" alt="company-logo"></div>
+            <div><img src="./images/tata.png" alt="company-logo"></div>
+            <div><img src="./images/DANONE_LOGO.png" alt="company-logo"></div>
+            <div><img src="./images/Emirates_NBD_logo.png" alt="company-logo"></div>
+            <div><img src="./images/Reliance_logo-2.png" alt="company-logo"></div>
+            <div><img src="./images/logo-capgemini.png" alt="company-logo"></div>
+            <div><img src="./images/logo-petrobras.png" alt="company-logo"></div>
+            <div><img src="./images/General_Electric_logo.png" alt="company-logo"></div>
+        </div>
+    </section>
+
+    <section id="goles">
+        <div><img src="./images/Image-Next-Step.png" alt="goles image"></div>
+        <div>
+            <h1>Take the next step</h1>
+            <h1>toward your personal</h1>
+            <h1>and professional goals</h1>
+            <h1>with Coursera.</h1>
+            <br>
+            <p>Join now to receive personalized recommendations from the full</p>
+            <p>Coursera catalog.</p>
+            <br>
+            <a href="#" class="golesBtn">Join For Free</a>
+        </div>
+    </section>
+    <br>
+
+    <section id="footer-section"></section>
+
+    <br>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Coursera</h3>
+            <a href="https://about.coursera.org/?_gl=1*16uaci6*_gcl_au*NTI3NDU4NDIwLjE3Mzg2ODYyMjk.">About</a>
+            <a href="https://about.coursera.org/how-coursera-works/">What We Offer</a>
+            <a href="https://about.coursera.org/leadership">Leadership</a>
+            <a href="https://careers.coursera.com/">Careers</a>
+            <a href="https://www.coursera.org/browse">Catalog</a>
+            <a href="https://www.coursera.org/courseraplus">Coursera Plus</a>
+            <a href="https://www.coursera.org/professional-certificates">Professional Certificates</a>
+            <a href="https://www.coursera.org/degrees">Degrees</a>
+        </div>
+        <div class="footer-column">
+            <h3>Community</h3>
+            <a href="https://www.coursera.support/s/community?language=en_US">Learners</a>
+            <a href="https://www.coursera.org/partners">Partners</a>
+            <a href="https://www.coursera.support/s/article/360000152926-Become-a-Coursera-beta-tester?language=en_US">Beta Testers</a>
+            <a href="https://blog.coursera.org/">Blog</a>
+            <a href="https://medium.com/coursera-engineering">Tech Blog</a>
+            <a href="https://www.coursera.org/teaching-center/?_gl=1*vj3is*_gcl_au*NTI3NDU4NDIwLjE3Mzg2ODYyMjk.">Teaching Center</a>
+        </div>
+        <div class="footer-column">
+            <h3>More</h3>
+            <a href="https://about.coursera.org/press?_gl=1*13kodiu*_gcl_au*NTI3NDU4NDIwLjE3Mzg2ODYyMjk.">Press</a>
+            <a href="https://investor.coursera.com/overview/default.aspx">Investors</a>
+            <a href="https://www.coursera.org/about/terms">Terms</a>
+            <a href="https://www.coursera.org/about/privacy">Privacy</a>
+            <a href="http://coursera.support/s/learner-help-center?language=en_US">Help</a>
+            <a href="https://www.coursera.support/s/article/360050668591-Accessibility-Statement?language=en_US">Accessibility</a>
+        </div>
+        <div class="footer-right">
+            <br>
+            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" alt="Google Play"></div>
+            <br><br>
+            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" alt="App Store"></div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    const databaseUrl = "https://b42group019the-stylist-default-rtdb.firebaseio.com/certificates.json";
+
+    fetch(databaseUrl)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            if (Array.isArray(data)) {
+                const certificates = data;
+                const firstFourCertificates = certificates.slice(0, 5);
+                const container = document.getElementById("newContainer");
+
+                firstFourCertificates.forEach(cert => {
+                    const certificateElement = document.createElement("div");
+                    certificateElement.classList.add("certificate");
+                    certificateElement.innerHTML = `
+                        <img src="${cert.image_url}" alt="${cert.course_name}" class="certificate-image">
+                        <h3 class="certificate-title">${cert.course_name.replace("Professional Certificate", "").trim()}</h3>
+                        <p class="certificate-duration"><strong>Duration:</strong> ${cert.duration}</p>
+                        <p class="certificate-prepared-for"><strong>Prepared For:</strong> ${cert.prepared_for}</p>
+                    `;
+
+                    // Add click event listener to redirect
+                    certificateElement.addEventListener("click", () => {
+                        sessionStorage.setItem("selectedCertificate", JSON.stringify(cert));
+                        window.location.href = "certificate-details.html";
+                    });
+
+                    container.appendChild(certificateElement);
+                });
+            } else {
+                console.error("Expected an array of certificates, but received:", data);
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching certificates:", error);
+        });
+</script>
+
+
+<script>
+    fetch('https://gen-ai-courses-default-rtdb.firebaseio.com/gen_ai_courses.json')
+      .then(response => response.json())
+      .then(data => {
+        const courses = [...data.New, ...data.Beginner, ...data.Popular]; // Merge arrays
+        const gridContainer = document.getElementById('course-grid');
+
+        // Display the first 3 courses in a grid
+        courses.slice(0, 3).forEach(course => {
+          const courseDiv = document.createElement('div');
+          courseDiv.classList.add('course');
+
+          courseDiv.innerHTML = `
+            <img src="${course.image_url}" alt="${course.course_name}">
+            <h3>${course.course_name}</h3>
+            <p>${course.company}</p>
+            <p>${course.description}</p>
+          `;
+
+          // Add click event listener to redirect
+          courseDiv.addEventListener("click", () => {
+              sessionStorage.setItem("selectedCourse", JSON.stringify(course));
+              window.location.href = "course-details.html";
+          });
+
+          gridContainer.appendChild(courseDiv);
+        });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+</script>
+
+
+<script>
+    const firebaseURL = "https://b42group019the-stylist-default-rtdb.firebaseio.com/certificates.json";
+
+    async function fetchCertificates() {
+        try {
+            const response = await fetch(firebaseURL);
+            const certificates = await response.json();
+    
+            const gridContainer = document.getElementById("certificatesGrid");
+            gridContainer.innerHTML = ""; // Clear previous content
+    
+            if (certificates) {
+                certificates.forEach(cert => {
+                    let courseName = cert.course_name.replace("Professional Certificate", "").trim();
+
+                    let item = document.createElement("div");
+                    item.classList.add("grid-item");
+                    item.style.cursor = "pointer"; // Indicate it's clickable
+
+                    let img = document.createElement("img");
+                    img.src = cert.image_url;
+                    img.alt = courseName;
+                    img.style.width = "100px";
+                    img.style.borderRadius = "8px";
+
+                    let title = document.createElement("p");
+                    title.textContent = courseName;
+                    title.style.fontWeight = "bold";
+
+                    // Add click event listener to redirect
+                    item.addEventListener("click", () => {
+                        sessionStorage.setItem("selectedCertificate", JSON.stringify(cert));
+                        window.location.href = "certificate-details-display.html";
+                    });
+
+                    item.appendChild(img);
+                    item.appendChild(title);
+                    gridContainer.appendChild(item);
+                });
+            }
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    }
+
+    // Fetch data when the page loads
+    window.onload = fetchCertificates;
+</script>
+
+<script>
+    fetch('https://degree-database-default-rtdb.firebaseio.com/degrees.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // Log the raw data to check the structure
+
+        if (Array.isArray(data)) {
+            const degrees = data.slice(0, 4); // Display only first 4 elements
+            const container = document.getElementById('degree-container');
+            container.innerHTML = ""; // Clear previous content
+
+            degrees.forEach(degree => {
+                const degreeDiv = document.createElement('div');
+                degreeDiv.classList.add('degree');
+                degreeDiv.style.cursor = "pointer"; // Indicate it's clickable
+
+                degreeDiv.innerHTML = `
+                    <img src="${degree.image_url}" alt="${degree.degree}" class="degree-img">
+                    <h3>${degree.university_name}</h3>
+                    <p><strong>Estimated Fees:</strong> ${degree.estimated_fees}</p>
+                `;
+
+                // Add click event listener to redirect
+                degreeDiv.addEventListener("click", () => {
+                    sessionStorage.setItem("selectedDegree", JSON.stringify(degree));
+                    window.location.href = "degree-details.html";
+                });
+
+                container.appendChild(degreeDiv);
+            });
+        } else {
+            console.error('Degrees data is not in the expected format or is missing.');
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+</script>
+
+<script src="./footerIndividuals.js"></script>
+
+<script>
+document.getElementById("genAIBtn").addEventListener("click", function() {
+    window.location.href = "./genai-courses.html";
+});
+</script>
+
+<script>
+    document.getElementById("joinBtn").addEventListener("click", function() {
+        window.location.href = "signup.html"; // Change to your local file name
+    });
+</script>
+
+<script>
+    document.querySelector(".search-btn").addEventListener("click", async function () {
+    let searchInput = document.querySelector(".search-bar input").value.toLowerCase().trim();
+    let resultsContainer = document.getElementById("searchResults");
+
+    if (!searchInput) {
+        resultsContainer.innerHTML = "<p>Please enter a search term.</p>";
+        return;
+    }
+
+    try {
+        let response = await fetch("https://gen-ai-courses-default-rtdb.firebaseio.com/gen_ai_courses.json");
+        let data = await response.json();
+
+        let filteredCourses = Object.values(data).filter(course => 
+            course && course.name && course.name.toLowerCase().includes(searchInput)
+        );
+
+        if (filteredCourses.length > 0) {
+            resultsContainer.innerHTML = filteredCourses.map(course => 
+                `<div class="course-item">
+                    <h3>${course.name}</h3>
+                    <p>${course.description || "No description available."}</p>
+                </div>`
+            ).join("");
+        } else {
+            resultsContainer.innerHTML = "<p>No matching courses found.</p>";
+        }
+    } catch (error) {
+        console.error("Error fetching courses:", error);
+        resultsContainer.innerHTML = "<p>Failed to fetch course data.</p>";
+    }
+});
+
+</script>
