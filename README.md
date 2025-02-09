@@ -17,7 +17,28 @@ Frontend
 
 [Watch the Video](https://drive.google.com/file/d/1ud6AfB7V4ihX-TviEUTYFzIkJxFoGiTG/view?usp=sharing)
 
+## Screenshots
 
+### Homepage View
+![homepage](screenshots/Screenshot%202025-02-09%20224416.png)
+
+### populer Certificates
+![populercertificates](screenshots/Screenshot%202025-02-09%20224446.png)
+
+### GEN AI Coueses 
+![genaicourses](screenshots/Screenshot%202025-02-09%20224456.png)
+
+### New On Coursera 
+![newoncoursera](screenshots/Screenshot%202025-02-09%20224506.png)
+
+### Degree Details
+![degree](screenshots/Screenshot%202025-02-09%20224515.png)
+
+### Community
+![community](screenshots/Screenshot%202025-02-09%20224531.png)
+
+### After Login 
+![afterloginhome](screenshots/Screenshot%202025-02-09%20224752.png)
 
 ## API Endpoints
 In firebase we are storying the data such as certificates and course details so we are fetching using get request/response.
@@ -31,3 +52,4 @@ GET /api/items - retrieve all items
 1. Clone this repository:  
    ```sh
    git clone https://github.com/Pratik3235/B42_WEB_019_The-Stylists
+   
